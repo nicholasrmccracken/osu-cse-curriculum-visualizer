@@ -1,24 +1,40 @@
+@import 'partials/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Arial", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+  "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+  "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+  "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
-}
+@import 'partials/table';
