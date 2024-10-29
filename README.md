@@ -1,4 +1,4 @@
-# OSU Curriculum Visualization
+# OSU Curriculum Visualizer
 
 An interactive tool which visualizes the **Computer Science & Engineering (CSE) Curriculum** at The Ohio State University, showing course prerequisites, corequisites, and postrequisites through a semester-by-semester plan. This tool can be leveraged by students to students understand course sequences and dependencies when planning their CSE degree at OSU!
 
