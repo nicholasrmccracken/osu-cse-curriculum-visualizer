@@ -2,17 +2,39 @@
 
 .curriculum-table {
     width: 75%;
-    border-collapse: collapse;
-  
-    th, td {
-        padding: 0.75rem;
-        text-align: left;
-        border: 1px solid #ddd;
-        background-color: #f4f4f4;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 4px;
+    font-size: 14px;
+
+    caption {
+        font-weight: bold;
+        color: $scarlet;
+        font-size: 20px;
+        padding: 2px;
     }
 
     th {
         font-weight: bold;
         text-align: center;
+        background-color: $scarlet;
+        color: white;
+    }
+
+    .course-container {
+        vertical-align: top;
+    }
+
+    .course {
+        background-color: #e8e8e8;
+        text-align: left;
+        padding: 4px;
+        height: 90px;
+        width: auto;
+        margin: 4px 0;
+
+        a {
+            font-size: 13px;
+        }
     }
 }

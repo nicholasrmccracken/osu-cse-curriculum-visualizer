@@ -19,7 +19,7 @@
   },
   {
     "course_id": "CSE 1223",
-    "name": "Introduction to Computer Programming in Java",
+    "name": "Intro to Computer Programming in Java",
     "url": "https://cse.osu.edu/",
     "credits": 3,
     "semester": 1,
@@ -37,7 +37,7 @@
   },
   {
     "course_id": "PHYSICS 1250",
-    "name": "Mechanics, Kinematics, and Fluids",
+    "name": "Mechanics, Kinematics, & Fluids",
     "url": "https://physics.osu.edu/",
     "credits": 5,
     "semester": 1,
@@ -59,7 +59,7 @@
   },
   {
     "course_id": "CSE 2221",
-    "name": "Software I: Introduction to Software Development",
+    "name": "Software I",
     "url": "https://cse.osu.edu/",
     "credits": 4,
     "semester": 2,
@@ -97,7 +97,7 @@
   },
   {
     "course_id": "CSE 2231",
-    "name": "Software II: Software Development and Design",
+    "name": "Software II",
     "url": "https://cse.osu.edu/",
     "credits": 4,
     "semester": 3,
@@ -110,7 +110,7 @@
   },
   {
     "course_id": "CSE 2321",
-    "name": "Foundations I: Discrete Structures",
+    "name": "Foundations I",
     "url": "https://cse.osu.edu/",
     "credits": 3,
     "semester": 3,
@@ -124,7 +124,7 @@
   },
   {
     "course_id": "STAT 3470",
-    "name": "Introduction to Probability and Statistics for Engineers",
+    "name": "Intro to Probability & Statistics for Engineers",
     "url": "https://stat.osu.edu/",
     "credits": 3,
     "semester": 3,
@@ -149,7 +149,7 @@
   },
   {
     "course_id": "CSE 2331",
-    "name": "Foundations II: Data Structures and Algorithms",
+    "name": "Foundations II",
     "url": "https://cse.osu.edu/",
     "credits": 3,
     "semester": 4,
@@ -162,7 +162,7 @@
   },
   {
     "course_id": "CSE 2421",
-    "name": "Systems I: Introduction to Low-Level Programming and Computer Organization",
+    "name": "Systems I",
     "url": "https://cse.osu.edu/",
     "credits": 4,
     "semester": 4,
@@ -174,7 +174,7 @@
   },
   {
     "course_id": "ECE 2060",
-    "name": "Introduction to Digital Logic",
+    "name": "Intro to Digital Logic",
     "url": "https://ece.osu.edu/",
     "credits": 3,
     "semester": 4,
@@ -202,7 +202,7 @@
   },
   {
     "course_id": "CSE 2431",
-    "name": "Systems II: Introduction to Operating Systems",
+    "name": "Systems II",
     "url": "https://cse.osu.edu/",
     "credits": 3,
     "semester": 5,
@@ -213,7 +213,7 @@
   },
   {
     "course_id": "CSE 390X",
-    "name": "Project: Design, Development, and Documentation",
+    "name": "Project: Design, Development, & Documentation",
     "url": "https://cse.osu.edu/",
     "credits": 4,
     "semester": 5,
@@ -224,7 +224,7 @@
   },
   {
     "course_id": "ECE 2020",
-    "name": "Introduction to Analog Systems and Circuits",
+    "name": "Intro to Analog Systems & Circuits",
     "url": "https://ece.osu.edu/",
     "credits": 3,
     "semester": 5,
@@ -294,7 +294,7 @@
   },
   {
     "course_id": "CSE 2501",
-    "name": "Social, Ethical, and Professional Issues in Computing",
+    "name": "Social, Ethical, & Professional Issues in Computing",
     "url": "https://cse.osu.edu/",
     "credits": 1,
     "semester": 6,
@@ -331,21 +331,21 @@
     "coreqs": []
   },
   {
-    "course_id": "Technical Elective",
+    "course_id": "Tech Elective",
     "credits": 3,
     "semester": 7,
     "prereqs": [],
     "coreqs": []
   },
   {
-    "course_id": "Technical Elective",
+    "course_id": "Tech Elective",
     "credits": 3,
     "semester": 7,
     "prereqs": [],
     "coreqs": []
   },
   {
-    "course_id": "Technical Elective",
+    "course_id": "Tech Elective",
     "credits": 3,
     "semester": 7,
     "prereqs": [],
@@ -373,21 +373,21 @@
     "coreqs": []
   },
   {
-    "course_id": "Technical Elective",
+    "course_id": "Tech Elective",
     "credits": 3,
     "semester": 8,
     "prereqs": [],
     "coreqs": []
   },
   {
-    "course_id": "Technical Elective",
+    "course_id": "Tech Elective",
     "credits": 3,
     "semester": 8,
     "prereqs": [],
     "coreqs": []
   },
   {
-    "course_id": "Technical Elective",
+    "course_id": "Tech Elective",
     "credits": 3,
     "semester": 8,
     "prereqs": [],

@@ -7,10 +7,8 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "OSU Course Visualizer" %></title>
-
-    <script type="module" src="/javascripts/course-manager.js"></script>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <link rel="stylesheet" href="/stylesheets/site.css">
+    <script type="module" src="/javascripts/site.js"></script>
   </head>
   <body>
     <%= yield %>

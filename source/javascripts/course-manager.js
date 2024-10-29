@@ -117,18 +117,4 @@ class CourseManager {
     }
 }
 
-let courseManager;
-
-// Fetch and parse the JSON file containing course data
-fetch('/data/courses.json')
-    .then(response => response.json())
-    .then(courses => {
-        // Create a CourseManager instance with populated sequences
-        courseManager = new CourseManager(courses);
-
-        // Log the courses
-        console.log(JSON.stringify(Array.from(courseManager.getCourses()), null, 2));
-    })
-    .catch(error => console.error('Error loading JSON file:', error));
-
-export default courseManager;
+export default CourseManager;
