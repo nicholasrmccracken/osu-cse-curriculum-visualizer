@@ -1,5 +1,12 @@
 @import 'variables';
 
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .curriculum-table {
     width: 75%;
     table-layout: fixed;

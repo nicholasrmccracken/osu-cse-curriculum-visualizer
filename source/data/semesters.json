@@ -1,0 +1,52 @@
+[
+    {  
+        "id": "1",
+        "geneds": {}
+    },
+    {
+        "id": "2",
+        "geneds": {
+            "GE-Launch Seminar": 1
+        }
+    },
+    {
+        "id": "3",
+        "geneds": {
+            "Math or Science Elective": 1,
+            "GE-Social & Behavioral": 1
+        }
+    },
+    {
+        "id": "4",
+        "geneds": {
+            "GE-Diversity": 1
+        }
+    },
+    {
+        "id": "5",
+        "geneds": {
+            "GE-History": 1
+        }
+    },
+    {
+        "id": "6",
+        "geneds": {
+            "GE-Theme": 1,
+            "Math or Science Elective": 1
+        }
+    },
+    {
+        "id": "7",
+        "geneds": {
+            "Tech Elective": 3,
+            "GE-Lit/VPA": 1
+        }
+    },
+    {
+        "id": "8",
+        "geneds": {
+            "Tech Elective": 3,
+            "GE-Theme": 1  
+        }
+    }
+]

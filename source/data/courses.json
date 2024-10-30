@@ -89,13 +89,6 @@
     "coreqs": []
   },
   {
-    "course_id": "GE-Launch Seminar",
-    "credits": 1,
-    "semester": 2,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
     "course_id": "CSE 2231",
     "name": "Software II",
     "url": "https://cse.osu.edu/",
@@ -131,20 +124,6 @@
     "prereqs": [
       "MATH 1172"
     ],
-    "coreqs": []
-  },
-  {
-    "course_id": "Math or Science Elective",
-    "credits": 4,
-    "semester": 3,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Social & Behavioral",
-    "credits": 3,
-    "semester": 3,
-    "prereqs": [],
     "coreqs": []
   },
   {
@@ -194,13 +173,6 @@
     "coreqs": []
   },
   {
-    "course_id": "GE-Diversity",
-    "credits": 3,
-    "semester": 4,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
     "course_id": "CSE 2431",
     "name": "Systems II",
     "url": "https://cse.osu.edu/",
@@ -243,13 +215,6 @@
     "prereqs": [
       "MATH 1172"
     ],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-History",
-    "credits": 3,
-    "semester": 5,
-    "prereqs": [],
     "coreqs": []
   },
   {
@@ -304,20 +269,6 @@
     "coreqs": []
   },
   {
-    "course_id": "GE-Theme",
-    "credits": 4,
-    "semester": 6,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Math or Science Elective",
-    "credits": 4,
-    "semester": 6,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
     "course_id": "CSE 3341",
     "name": "Principles of Programming Languages",
     "url": "https://cse.osu.edu/",
@@ -328,34 +279,6 @@
       "CSE 390X",
       "CSE 2421"
     ],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Lit/VPA",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
     "coreqs": []
   },
   {
@@ -370,34 +293,6 @@
       "CSE 32X1",
       "CSE 2501"
     ],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Theme",
-    "credits": 4,
-    "semester": 8,
-    "prereqs": [],
     "coreqs": []
   }
 ]
