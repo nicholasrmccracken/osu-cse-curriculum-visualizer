@@ -37,4 +37,12 @@
             font-size: 13px;
         }
     }
+    .course:hover {
+        background-color: navy;
+        color: $white; 
+
+        a {
+            color: $gray
+        }
+      }
 }

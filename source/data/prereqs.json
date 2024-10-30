@@ -53,7 +53,7 @@
       "prereqs": ["CSE 2231", "CSE 2321", "CSE 2421"],
       "coreqs": [],
       "postrequisites": []
-    },
+    }
 }
 
 
