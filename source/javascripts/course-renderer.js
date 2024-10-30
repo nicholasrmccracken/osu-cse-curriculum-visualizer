@@ -1,7 +1,7 @@
 /**
  * Renders the courses into their respective semester columns.
  * @param {Array} courses - An array of course objects.
- * @param {string} courses[].course_id - The ID of the course.
+ * @param {string} courses[].id - The ID of the course.
  * @param {number} courses[].credits - The number of credits for the course.
  * @param {string} courses[].semester - The semester ID the course belongs to.
  * @param {string} [courses[].name] - The name of the course (optional).
@@ -15,11 +15,11 @@ function renderCourses(courses) {
         // Create course container
         const courseContainer = document.createElement('div');
         courseContainer.classList.add('course');
-        courseContainer.id = course.course_id
+        courseContainer.id = course.id
 
         // Create and append course ID and credits text
         const courseIdText = document.createElement('strong');
-        courseIdText.innerText = `${course.course_id} (${course.credits})`
+        courseIdText.innerText = `${course.id} (${course.credits})`
         courseContainer.appendChild(courseIdText);
         courseContainer.appendChild(document.createElement('br'));
 
@@ -61,7 +61,12 @@ function renderGeneds(geneds, semesters) {
             // Create and append course name
             const courseNameText = document.createElement('em');
             if (name in geneds) {
-                courseNameText.innerText = `${name} (${geneds[name].credits})`
+                courseNameText.innerText = `${name} (${geneds[name].credits})`;
+
+                // Add id to gened if it is a prerequisite for other courses
+                if (count === 1 && 'id' in geneds[name]) {
+                    courseContainer.id = geneds[name].id;
+                }
             } else {
                 courseNameText.innerText = name;
             }
