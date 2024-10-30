@@ -13,7 +13,7 @@
     {
         "id": "3",
         "geneds": {
-            "Math or Science Elective": 1,
+            "Math/Science Elective": 1,
             "GE-Social & Behavioral": 1
         }
     },
@@ -33,7 +33,7 @@
         "id": "6",
         "geneds": {
             "GE-Theme": 1,
-            "Math or Science Elective": 1
+            "Math/Science Elective": 1
         }
     },
     {

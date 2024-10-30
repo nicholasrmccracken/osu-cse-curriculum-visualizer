@@ -13,10 +13,12 @@ body {
     border-collapse: separate;
     border-spacing: 4px;
     font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    border-radius: 6px;
 
     caption {
         font-weight: bold;
-        color: $scarlet;
+        color: $primary-scarlet;
         font-size: 20px;
         padding: 2px;
     }
@@ -24,8 +26,17 @@ body {
     th {
         font-weight: bold;
         text-align: center;
-        background-color: $scarlet;
+        padding: 4px;
+    }
+
+    thead {
+        background-color: $primary-scarlet;
         color: white;
+    }
+
+    tfoot th {
+        border-top: 1px dashed black; 
+        border-bottom: 1px dashed black; 
     }
 
     .course-container {
@@ -33,12 +44,13 @@ body {
     }
 
     .course {
-        background-color: #e8e8e8;
+        background-color: $secondary-light-gray;
         text-align: left;
         padding: 4px;
         height: 90px;
         width: auto;
         margin: 4px 0;
+        overflow: hidden;
 
         em {
             font-size: 13px;
@@ -46,11 +58,11 @@ body {
     }
 
     .course:hover {
-        background-color: navy;
-        color: $white; 
+        background-color: $highlighted-course;
+        color: white; 
 
         a {
-            color: $gray
+            color: $secondary-light-gray;
         }
     }
 
