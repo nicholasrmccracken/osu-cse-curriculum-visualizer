@@ -1,5 +1,5 @@
 import populateSequences from './sequence-populator.js';
-import renderTable from './course-renderer.js';
+import renderTable from './table-renderer.js';
 
 /**
  * Fetches JSON data for courses, geneds, and semesters, then populates sequences and renders the table.

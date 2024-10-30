@@ -1,3 +1,7 @@
+const COURSE_CONTAINER_CLASS = 'course';
+const SEMESTER_PREFIX = 'semester-';
+const SEMESTERS = 8;
+
 /**
  * Renders the courses into their respective semester columns.
  * @param {Array} courses - An array of course objects.
@@ -10,11 +14,11 @@
 function renderCourses(courses) {
     courses.forEach(course => {
         // Determine which column the course belongs to
-        const column = document.getElementById(`semester-${course.semester}`);
+        const column = document.querySelector(`#${SEMESTER_PREFIX}${course.semester}`);
 
         // Create course container
         const courseContainer = document.createElement('div');
-        courseContainer.classList.add('course');
+        courseContainer.classList.add(COURSE_CONTAINER_CLASS);
         courseContainer.id = course.id
 
         // Create and append course ID and credits text
@@ -57,12 +61,12 @@ function renderCourses(courses) {
 function renderGeneds(geneds, semesters) {
     semesters.forEach(semester => {
         // Determine which column the course belongs to
-        const column = document.getElementById(`semester-${semester.id}`);
+        const column = document.querySelector(`#${SEMESTER_PREFIX}${semester.id}`);
 
         Object.entries(semester.geneds).forEach(([name, count]) => {
             // Create course container
             const courseContainer = document.createElement('div');
-            courseContainer.classList.add('course', 'gened');
+            courseContainer.classList.add(COURSE_CONTAINER_CLASS, 'gened');
 
             // Create and append course name
             const courseNameText = document.createElement('em');
@@ -87,6 +91,37 @@ function renderGeneds(geneds, semesters) {
 }
 
 /**
+ * Renders the footer of the curriculum table with the total credit hours for each semester.
+ */
+function renderFooter() {
+    for (let i = 0; i < SEMESTERS; i++) {
+        const column = document.querySelector(`#${SEMESTER_PREFIX}${i + 1}`);
+
+        let credits = 0;
+        const courseElements = column.querySelectorAll('.course');
+
+        // Sum the credits for each course in the column
+        // Each credit amount is surrounded by () within the text of the course
+        courseElements.forEach(courseElement => {
+            const courseText = courseElement.textContent;
+            const match = courseText.match(/\((\d+)\)/);
+
+            if (match) {
+                credits += parseInt(match[1], 10);
+            }
+        });
+
+        // Create and append credits amount to footer by semester
+        const tableFooter = document.querySelector(`.curriculum-table tfoot`);
+
+        const creditsContainer = document.createElement('th');
+        creditsContainer.textContent = `${credits} hours`;
+
+        tableFooter.appendChild(creditsContainer);
+    }
+}
+
+/**
  * Renders the courses and general education courses into their respective semester columns.
  * @param {Array} courses - An array of course objects.
  * @param {Object} geneds - An object containing general education courses.
@@ -95,4 +130,5 @@ function renderGeneds(geneds, semesters) {
 export default function renderTable(courses, geneds, semesters) {
     renderCourses(courses);
     renderGeneds(geneds, semesters);
+    renderFooter();
 }
