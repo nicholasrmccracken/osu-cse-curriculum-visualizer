@@ -24,18 +24,24 @@ function renderCourses(courses) {
         courseContainer.appendChild(document.createElement('br'));
 
         // Create and append hyperlinked course name if the course name is present
-        // Course name is not present for certain elective courses i.e. "Tech Electives"
-        if ('name' in course) {
-            const courseNameText = document.createElement('a');
-            courseNameText.href = course.url;
-
-            const name = document.createElement('em');
-            name.innerText = course.name;
+        const courseNameText = document.createElement('em');
+        const names = course.name.split(' or ');
+        
+        // Courses names which have multiple options (or) have multiple URLS to hyperlink
+        (course.urls).forEach((url, index) => {
+            const name = document.createElement('a');
+            name.href = url;
+            name.innerText = names[index];
 
             courseNameText.appendChild(name);
-            courseContainer.appendChild(courseNameText);
-        }
-        
+
+            if (index < (course.urls).length - 1) {
+                courseNameText.appendChild(document.createTextNode(' or '));
+            }
+        });
+
+        courseContainer.appendChild(courseNameText);
+
         // Append the course container to the appropriate column
         column.appendChild(courseContainer);
     });
@@ -56,7 +62,7 @@ function renderGeneds(geneds, semesters) {
         Object.entries(semester.geneds).forEach(([name, count]) => {
             // Create course container
             const courseContainer = document.createElement('div');
-            courseContainer.classList.add('course');
+            courseContainer.classList.add('course', 'gened');
 
             // Create and append course name
             const courseNameText = document.createElement('em');

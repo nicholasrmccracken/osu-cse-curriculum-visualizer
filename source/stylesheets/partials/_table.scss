@@ -40,10 +40,11 @@ body {
         width: auto;
         margin: 4px 0;
 
-        a {
+        em {
             font-size: 13px;
         }
     }
+
     .course:hover {
         background-color: navy;
         color: $white; 
@@ -51,5 +52,10 @@ body {
         a {
             color: $gray
         }
-      }
+    }
+
+    .gened {
+        display: flex;
+        align-items: center;
+    }
 }
