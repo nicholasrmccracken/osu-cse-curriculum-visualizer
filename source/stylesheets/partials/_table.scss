@@ -1,27 +1,19 @@
 @import 'variables';
 
-body {
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-}
-
 .curriculum-table {
-    width: 75%;
     table-layout: fixed;
     border-collapse: separate;
     border-spacing: 4px;
     font-size: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    border-radius: 6px;
+    border-radius: 10px;
+    width: 75%;
 
     caption {
         font-weight: bold;
-        color: $primary-scarlet;
+        background-color: $primary-scarlet;
+        color: white;
         font-size: 20px;
-        padding: 2px;
     }
 
     th {
