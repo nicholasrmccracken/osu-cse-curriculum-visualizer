@@ -3,28 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Dynamic Title -->
     <title><%= current_page.data.title || "OSU Course Visualizer" %></title>
     
+    <!-- Core Stylesheet -->
     <link rel="stylesheet" href="/stylesheets/site.css">
+
+    <!-- Conditional Stylesheets -->
+    <% if current_page.data.tooltip %>
+      <link rel="stylesheet" href="/stylesheets/partials/tooltip.css">
+    <% end %>
     
-    <!-- Use the stylesheet from a page's frontmatter if it has one -->
-    <% if current_page.data.stylesheet %>
-      <link rel="stylesheet" href="/<%= current_page.data.stylesheet %>">
+    <% if current_page.data.progress_tracker %>
+      <link rel="stylesheet" href="/stylesheets/partials/progress-tracker.css">
     <% end %>
 
-    <!-- Use any additional stylesheet from a page's frontmatter -->
-    <% if current_page.data.additional_stylesheets %>
-      <% current_page.data.additional_stylesheets.each do |stylesheet| %>
-        <link rel="stylesheet" href="<%= stylesheet %>">
-      <% end %>
+    <% if current_page.data.filter_options %>
+      <link rel="stylesheet" href="/stylesheets/partials/filter-options.css">
     <% end %>
 
+    <% if current_page.data.capstone %>
+      <link rel="stylesheet" href="/stylesheets/partials/capstone.css">
+    <% end %>
+
+    <!-- Core JavaScript Module -->
     <script type="module" src="/javascripts/site.js"></script>
+
+    <!-- Tooltip and Interactivity Scripts -->
+    <% if current_page.data.tooltip %>
+      <script type="module" src="/javascripts/tooltip-handler.js"></script>
+    <% end %>
+    <% if current_page.data.interactive_features %>
+      <script type="module" src="/javascripts/hover-events.js"></script>
+      <script type="module" src="/javascripts/progress-tracker.js"></script>
+      <script type="module" src="/javascripts/filter-handler.js"></script>
+    <% end %>
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <h1><%= current_page.data.title || "OSU Course Visualizer" %></h1>
+      <%= partial "partials/navbar" %>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <%= yield %>
+    </main>
+
+    <!-- Progress Tracker Section (Optional) -->
+    <% if current_page.data.progress_tracker %>
+      <%= partial "partials/progress-tracker" %>
+    <% end %>
+
+    <!-- Capstone Section (Optional) -->
+    <% if current_page.data.capstone %>
+      <%= partial "partials/capstone" %>
+    <% end %>
+
+    <!-- Specialization Selector (Optional) -->
+    <% if current_page.data.specialization %>
+      <%= partial "partials/specialization" %>
+    <% end %>
+
+    <footer>
+      <%= partial "layouts/footer" %>
+    </footer>
   </body>
 </html>
