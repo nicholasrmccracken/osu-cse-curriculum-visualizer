@@ -1,5 +1,6 @@
 import populateSequences from './sequence-populator.js';
 import renderTable from './table-renderer.js';
+import createHoverEvents from './hover-events.js';
 
 /**
  * Fetches JSON data for courses, geneds, and semesters, then populates sequences and renders the table.
@@ -11,9 +12,16 @@ Promise.all([
     fetch('data/semesters.json').then(response => response.json())
 ])
     .then(([courses, geneds, semesters]) => {
-        console.log('JSON data was fetched successfuly.');
+        console.log('JSON data was fetched successfully.');
 
-        const populatedCourses = populateSequences(courses);
-        renderTable(populatedCourses, geneds, semesters);
+        try {
+            const populatedCourses = populateSequences(courses);
+            renderTable(populatedCourses, geneds, semesters);
+            createHoverEvents();
+
+            console.log('Table was rendered successfully');
+        } catch (error) {
+            console.error('Error rending table:\n', error);
+        }
     })
-    .catch(error => console.error('Error loading JSON file:', error));
+    .catch(error => console.error('Error loading JSON file:\n', error));

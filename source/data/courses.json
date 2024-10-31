@@ -256,7 +256,7 @@
   },
   {
     "id": "CSE 32X1",
-    "name": "Software Engineering or Database Systems",
+    "name": "Software Engineering OR Database Systems",
     "urls": [
       "https://cse.osu.edu/", 
       "https://cse.osu.edu/"
@@ -272,7 +272,7 @@
   },
   {
     "id": "CSE 34X1",
-    "name": "Computer Architecture or Networking",
+    "name": "Computer Architecture OR Networking",
     "urls": [
       "https://cse.osu.edu/", 
       "https://cse.osu.edu/"
@@ -289,7 +289,7 @@
   },
   {
     "id": "CSE 35X1",
-    "name": "Artificial Intelligence or Graphics",
+    "name": "Artificial Intelligence OR Graphics",
     "urls": [
       "https://cse.osu.edu/", 
       "https://cse.osu.edu/"
