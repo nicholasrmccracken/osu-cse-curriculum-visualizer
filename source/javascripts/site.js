@@ -19,9 +19,9 @@ Promise.all([
             renderTable(populatedCourses, geneds, semesters);
             createHoverEvents();
 
-            console.log('Table was rendered successfully');
+            console.log('Table was rendered successfully.');
         } catch (error) {
-            console.error('Error rending table:\n', error);
+            console.error('Error rendering table:\n', error);
         }
     })
     .catch(error => console.error('Error loading JSON file:\n', error));
