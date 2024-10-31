@@ -1,0 +1,38 @@
+.flow {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+  
+.legend {
+    width: 75%;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    border: black;
+    height: 100%;
+
+    li {
+        text-align: center;
+    }
+}
+
+.im-prereq {
+    background-color: $immediate-prerequisite;
+}
+
+.chain-prereq {
+    background-color: $prerequisite-chain;
+}
+
+.coreq {
+    background-color: $corequisite;
+}
+
+.postreq {
+    background-color: $postrequisite-chain;
+}
