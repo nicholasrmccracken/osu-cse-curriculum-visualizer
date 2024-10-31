@@ -1,44 +1,54 @@
-[
-  {
-    "course_id": "ENGR 1100",
+{
+  "ENGR 1100": {
+    "id": "ENGR 1100",
     "name": "Engineering Survey",
-    "url": "https://engineering.osu.edu/",
+    "urls": [
+      "https://engineering.osu.edu/"
+    ],
     "credits": 1,
     "semester": 1,
     "prereqs": [],
     "coreqs": []
   },
-  {
-    "course_id": "ENGR 1181",
+  "ENGR 1181": {
+    "id": "ENGR 1181",
     "name": "Fundamentals of Engineering I",
-    "url": "https://engineering.osu.edu/",
+    "urls": [
+      "https://engineering.osu.edu/"
+    ],
     "credits": 2,
     "semester": 1,
     "prereqs": [],
     "coreqs": []
   },
-  {
-    "course_id": "CSE 1223",
+  "CSE 1223": {
+    "id": "CSE 1223",
     "name": "Intro to Computer Programming in Java",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 1,
     "prereqs": [],
     "coreqs": []
   },
-  {
-    "course_id": "MATH 1151",
+  "MATH 1151": {
+    "id": "MATH 1151",
     "name": "Calculus I",
-    "url": "https://math.osu.edu/",
+    "urls": [
+      "https://math.osu.edu/"
+    ],
     "credits": 5,
     "semester": 1,
     "prereqs": [],
     "coreqs": []
   },
-  {
-    "course_id": "PHYSICS 1250",
+  "PHYSICS 1250": {
+    "id": "PHYSICS 1250",
     "name": "Mechanics, Kinematics, & Fluids",
-    "url": "https://physics.osu.edu/",
+    "urls": [
+      "https://physics.osu.edu/"
+    ],
     "credits": 5,
     "semester": 1,
     "prereqs": [],
@@ -46,10 +56,12 @@
       "MATH 1151"
     ]
   },
-  {
-    "course_id": "ENGR 1182",
+  "ENGR 1182": {
+    "id": "ENGR 1182",
     "name": "Fundamentals of Engineering II",
-    "url": "https://engineering.osu.edu/",
+    "urls": [
+      "https://engineering.osu.edu/"
+    ],
     "credits": 2,
     "semester": 2,
     "prereqs": [
@@ -57,10 +69,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "CSE 2221",
+  "CSE 2221": {
+    "id": "CSE 2221",
     "name": "Software I",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 4,
     "semester": 2,
     "prereqs": [
@@ -70,10 +84,12 @@
       "CSE 1151"
     ]
   },
-  {
-    "course_id": "MATH 1172",
+  "MATH 1172": {
+    "id": "MATH 1172",
     "name": "Calculus II",
-    "url": "https://math.osu.edu/",
+    "urls": [
+      "https://math.osu.edu/"
+    ],
     "credits": 5,
     "semester": 2,
     "prereqs": [
@@ -81,24 +97,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "GE-Writing",
-    "credits": 3,
-    "semester": 2,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Launch Seminar",
-    "credits": 1,
-    "semester": 2,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "CSE 2231",
+  "CSE 2231": {
+    "id": "CSE 2231",
     "name": "Software II",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 4,
     "semester": 3,
     "prereqs": [
@@ -108,10 +112,12 @@
       "CSE 2321"
     ]
   },
-  {
-    "course_id": "CSE 2321",
+  "CSE 2321": {
+    "id": "CSE 2321",
     "name": "Foundations I",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 3,
     "prereqs": [
@@ -122,10 +128,12 @@
       "CSE 2231"
     ]
   },
-  {
-    "course_id": "STAT 3470",
+  "STAT 3470": {
+    "id": "STAT 3470",
     "name": "Intro to Probability & Statistics for Engineers",
-    "url": "https://stat.osu.edu/",
+    "urls": [
+      "https://stat.osu.edu/"
+    ],
     "credits": 3,
     "semester": 3,
     "prereqs": [
@@ -133,24 +141,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "Math or Science Elective",
-    "credits": 4,
-    "semester": 3,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Social & Behavioral",
-    "credits": 3,
-    "semester": 3,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "CSE 2331",
+  "CSE 2331": {
+    "id": "CSE 2331",
     "name": "Foundations II",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 4,
     "prereqs": [
@@ -160,10 +156,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "CSE 2421",
+  "CSE 2421": {
+    "id": "CSE 2421",
     "name": "Systems I",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 4,
     "semester": 4,
     "prereqs": [
@@ -172,19 +170,23 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "ECE 2060",
+  "ECE 2060": {
+    "id": "ECE 2060",
     "name": "Intro to Digital Logic",
-    "url": "https://ece.osu.edu/",
+    "urls": [
+      "https://ece.osu.edu/"
+    ],
     "credits": 3,
     "semester": 4,
     "prereqs": [],
     "coreqs": []
   },
-  {
-    "course_id": "MATH 3345",
+  "MATH 3345": {
+    "id": "MATH 3345",
     "name": "Foundations of Higher Mathematics",
-    "url": "https://math.osu.edu/",
+    "urls": [
+      "https://math.osu.edu/"
+    ],
     "credits": 3,
     "semester": 4,
     "prereqs": [
@@ -193,17 +195,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "GE-Diversity",
-    "credits": 3,
-    "semester": 4,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "CSE 2431",
+  "CSE 2431": {
+    "id": "CSE 2431",
     "name": "Systems II",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 5,
     "prereqs": [
@@ -211,10 +208,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "CSE 390X",
-    "name": "Project: Design, Development, & Documentation",
-    "url": "https://cse.osu.edu/",
+  "CSE 390X": {
+    "id": "CSE 390X",
+    "name": "Project",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 4,
     "semester": 5,
     "prereqs": [
@@ -222,10 +221,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "ECE 2020",
+  "ECE 2020": {
+    "id": "ECE 2020",
     "name": "Intro to Analog Systems & Circuits",
-    "url": "https://ece.osu.edu/",
+    "urls": [
+      "https://ece.osu.edu/"
+    ],
     "credits": 3,
     "semester": 5,
     "prereqs": [
@@ -234,10 +235,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "MATH 2568",
+  "MATH 2568": {
+    "id": "MATH 2568",
     "name": "Linear Algebra",
-    "url": "https://math.osu.edu/",
+    "urls": [
+      "https://math.osu.edu/"
+    ],
     "credits": 3,
     "semester": 5,
     "prereqs": [
@@ -245,17 +248,13 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "GE-History",
-    "credits": 3,
-    "semester": 5,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "CSE 32X1",
-    "name": "Software Engineering or Database Systems",
-    "url": "https://cse.osu.edu/",
+  "CSE 32X1": {
+    "id": "CSE 32X1",
+    "name": "Software Engineering OR Database Systems",
+    "urls": [
+      "https://cse.osu.edu/", 
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 6,
     "prereqs": [
@@ -265,10 +264,13 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "CSE 34X1",
-    "name": "Computer Architecture or Networking",
-    "url": "https://cse.osu.edu/",
+  "CSE 34X1": {
+    "id": "CSE 34X1",
+    "name": "Computer Architecture OR Networking",
+    "urls": [
+      "https://cse.osu.edu/", 
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 6,
     "prereqs": [
@@ -279,10 +281,13 @@
       "CSE 2431"
     ]
   },
-  {
-    "course_id": "CSE 35X1",
-    "name": "Artificial Intelligence or Graphics",
-    "url": "https://cse.osu.edu/",
+  "CSE 35X1": {
+    "id": "CSE 35X1",
+    "name": "Artificial Intelligence OR Graphics",
+    "urls": [
+      "https://cse.osu.edu/", 
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 6,
     "prereqs": [
@@ -292,10 +297,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "CSE 2501",
+  "CSE 2501": {
+    "id": "CSE 2501",
     "name": "Social, Ethical, & Professional Issues in Computing",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 1,
     "semester": 6,
     "prereqs": [
@@ -303,24 +310,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "GE-Theme",
-    "credits": 4,
-    "semester": 6,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Math or Science Elective",
-    "credits": 4,
-    "semester": 6,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "CSE 3341",
+  "CSE 3341": {
+    "id": "CSE 3341",
     "name": "Principles of Programming Languages",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 3,
     "semester": 7,
     "prereqs": [
@@ -330,38 +325,12 @@
     ],
     "coreqs": []
   },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Lit/VPA",
-    "credits": 3,
-    "semester": 7,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "CSE 591X",
+  "CSE 591X": {
+    "id": "CSE 591X",
     "name": "Capstone",
-    "url": "https://cse.osu.edu/",
+    "urls": [
+      "https://cse.osu.edu/"
+    ],
     "credits": 4,
     "semester": 8,
     "prereqs": [
@@ -371,33 +340,5 @@
       "CSE 2501"
     ],
     "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "Tech Elective",
-    "credits": 3,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
-  },
-  {
-    "course_id": "GE-Theme",
-    "credits": 4,
-    "semester": 8,
-    "prereqs": [],
-    "coreqs": []
   }
-]
+}

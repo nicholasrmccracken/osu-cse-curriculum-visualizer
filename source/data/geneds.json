@@ -1,0 +1,31 @@
+{
+    "Tech Elective": {
+        "credits": 3
+    },
+    "Math/Science Elective": {
+        "credits": 4
+    },
+    "GE-Theme": {
+        "credits": 4
+    },
+    "GE-Lit/VPA": {
+        "credits": 3
+    },
+    "GE-History": {
+        "credits": 3
+    },
+    "GE-Diversity": {
+        "credits": 3
+    },
+    "GE-Social & Behavioral": {
+        "credits": 3
+    },
+    "GE-Launch Seminar": {
+        "id": "GE-Launch Seminar",
+        "credits": 1
+    },
+    "GE-Writing": {
+        "id": "GE-Writing",
+        "credits": 3
+    }
+}

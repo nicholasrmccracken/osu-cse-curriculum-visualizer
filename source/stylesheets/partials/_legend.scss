@@ -1,0 +1,38 @@
+.legend {
+    width: 75%;
+    height: 75px;
+    padding: 5px;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 3px;
+    border: 2px solid $accent-gray;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    li {
+        text-align: center ;
+        border: 2px solid $accent-gray;
+        font-weight: bold;
+        color: $accent-dark-gray
+    }
+}
+
+.im-prereq {
+    background-color: $immediate-prerequisite;
+}
+
+.chain-prereq {
+    background-color: $prerequisite-chain;
+}
+
+.coreq {
+    background-color: $corequisite;
+}
+
+.postreq {
+    background-color: $postrequisite-chain;
+}

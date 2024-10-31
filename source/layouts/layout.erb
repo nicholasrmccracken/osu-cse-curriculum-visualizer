@@ -7,7 +7,21 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "OSU Course Visualizer" %></title>
+    
     <link rel="stylesheet" href="/stylesheets/site.css">
+    
+    <!-- Use the stylesheet from a page's frontmatter if it has one -->
+    <% if current_page.data.stylesheet %>
+      <link rel="stylesheet" href="/<%= current_page.data.stylesheet %>">
+    <% end %>
+
+    <!-- Use any additional stylesheet from a page's frontmatter -->
+    <% if current_page.data.additional_stylesheets %>
+      <% current_page.data.additional_stylesheets.each do |stylesheet| %>
+        <link rel="stylesheet" href="<%= stylesheet %>">
+      <% end %>
+    <% end %>
+
     <script type="module" src="/javascripts/site.js"></script>
   </head>
   <body>
