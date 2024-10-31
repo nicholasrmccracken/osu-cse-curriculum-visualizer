@@ -1,5 +1,5 @@
-[
-  {
+{
+  "ENGR 1100": {
     "id": "ENGR 1100",
     "name": "Engineering Survey",
     "urls": [
@@ -10,7 +10,7 @@
     "prereqs": [],
     "coreqs": []
   },
-  {
+  "ENGR 1181": {
     "id": "ENGR 1181",
     "name": "Fundamentals of Engineering I",
     "urls": [
@@ -21,7 +21,7 @@
     "prereqs": [],
     "coreqs": []
   },
-  {
+  "CSE 1223": {
     "id": "CSE 1223",
     "name": "Intro to Computer Programming in Java",
     "urls": [
@@ -32,20 +32,18 @@
     "prereqs": [],
     "coreqs": []
   },
-  {
+  "MATH 1151": {
     "id": "MATH 1151",
     "name": "Calculus I",
     "urls": [
-      [
-        
-      ]
+      "https://math.osu.edu/"
     ],
     "credits": 5,
     "semester": 1,
     "prereqs": [],
     "coreqs": []
   },
-  {
+  "PHYSICS 1250": {
     "id": "PHYSICS 1250",
     "name": "Mechanics, Kinematics, & Fluids",
     "urls": [
@@ -58,7 +56,7 @@
       "MATH 1151"
     ]
   },
-  {
+  "ENGR 1182": {
     "id": "ENGR 1182",
     "name": "Fundamentals of Engineering II",
     "urls": [
@@ -71,7 +69,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 2221": {
     "id": "CSE 2221",
     "name": "Software I",
     "urls": [
@@ -86,13 +84,11 @@
       "CSE 1151"
     ]
   },
-  {
+  "MATH 1172": {
     "id": "MATH 1172",
     "name": "Calculus II",
     "urls": [
-      [
-        
-      ]
+      "https://math.osu.edu/"
     ],
     "credits": 5,
     "semester": 2,
@@ -101,7 +97,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 2231": {
     "id": "CSE 2231",
     "name": "Software II",
     "urls": [
@@ -116,7 +112,7 @@
       "CSE 2321"
     ]
   },
-  {
+  "CSE 2321": {
     "id": "CSE 2321",
     "name": "Foundations I",
     "urls": [
@@ -132,7 +128,7 @@
       "CSE 2231"
     ]
   },
-  {
+  "STAT 3470": {
     "id": "STAT 3470",
     "name": "Intro to Probability & Statistics for Engineers",
     "urls": [
@@ -145,7 +141,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 2331": {
     "id": "CSE 2331",
     "name": "Foundations II",
     "urls": [
@@ -160,7 +156,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 2421": {
     "id": "CSE 2421",
     "name": "Systems I",
     "urls": [
@@ -174,7 +170,7 @@
     ],
     "coreqs": []
   },
-  {
+  "ECE 2060": {
     "id": "ECE 2060",
     "name": "Intro to Digital Logic",
     "urls": [
@@ -185,13 +181,11 @@
     "prereqs": [],
     "coreqs": []
   },
-  {
+  "MATH 3345": {
     "id": "MATH 3345",
     "name": "Foundations of Higher Mathematics",
     "urls": [
-      [
-        
-      ]
+      "https://math.osu.edu/"
     ],
     "credits": 3,
     "semester": 4,
@@ -201,7 +195,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 2431": {
     "id": "CSE 2431",
     "name": "Systems II",
     "urls": [
@@ -214,9 +208,9 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 390X": {
     "id": "CSE 390X",
-    "name": "Project: Design, Development, & Documentation",
+    "name": "Project",
     "urls": [
       "https://cse.osu.edu/"
     ],
@@ -227,7 +221,7 @@
     ],
     "coreqs": []
   },
-  {
+  "ECE 2020": {
     "id": "ECE 2020",
     "name": "Intro to Analog Systems & Circuits",
     "urls": [
@@ -241,7 +235,7 @@
     ],
     "coreqs": []
   },
-  {
+  "MATH 2568": {
     "id": "MATH 2568",
     "name": "Linear Algebra",
     "urls": [
@@ -254,7 +248,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 32X1": {
     "id": "CSE 32X1",
     "name": "Software Engineering OR Database Systems",
     "urls": [
@@ -270,7 +264,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 34X1": {
     "id": "CSE 34X1",
     "name": "Computer Architecture OR Networking",
     "urls": [
@@ -287,7 +281,7 @@
       "CSE 2431"
     ]
   },
-  {
+  "CSE 35X1": {
     "id": "CSE 35X1",
     "name": "Artificial Intelligence OR Graphics",
     "urls": [
@@ -303,7 +297,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 2501": {
     "id": "CSE 2501",
     "name": "Social, Ethical, & Professional Issues in Computing",
     "urls": [
@@ -316,7 +310,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 3341": {
     "id": "CSE 3341",
     "name": "Principles of Programming Languages",
     "urls": [
@@ -331,7 +325,7 @@
     ],
     "coreqs": []
   },
-  {
+  "CSE 591X": {
     "id": "CSE 591X",
     "name": "Capstone",
     "urls": [
@@ -347,4 +341,4 @@
     ],
     "coreqs": []
   }
-]
+}
