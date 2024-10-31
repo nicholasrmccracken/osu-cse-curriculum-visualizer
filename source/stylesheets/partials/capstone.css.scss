@@ -1,0 +1,36 @@
+#capstone-options {
+    background-color: $secondary-light-gray;
+    padding: 20px;
+    border: 1px solid $accent-gray;
+    border-radius: 5px;
+  
+    h2 {
+      color: $primary-scarlet;
+    }
+  
+    .capstone-list {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .capstone-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid $accent-gray;
+      color: $accent-dark-gray;
+      
+      .prerequisite {
+        color: $immediate-prerequisite;
+        font-weight: bold;
+      }
+    }
+  
+    .eligible {
+      color: $highlighted-course;
+    }
+    
+    .ineligible {
+      color: $prerequisite-chain;
+    }
+  }
+  

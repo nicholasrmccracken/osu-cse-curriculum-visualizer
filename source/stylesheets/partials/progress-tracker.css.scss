@@ -1,0 +1,30 @@
+#progress-tracker {
+    background-color: $secondary-light-gray;
+    padding: 20px;
+    border: 1px solid $accent-gray;
+    border-radius: 5px;
+  
+    .tracker-item {
+      margin-bottom: 10px;
+      color: $accent-dark-gray;
+    }
+  
+    .progress-bar {
+      background-color: $highlighted-course;
+      height: 8px;
+      border-radius: 4px;
+    }
+  
+    .completed-course {
+      color: $highlighted-course;
+      font-weight: bold;
+    }
+  
+    .in-progress {
+      color: $primary-scarlet;
+    }
+  
+    .remaining {
+      color: $accent-gray;
+    }
+  }

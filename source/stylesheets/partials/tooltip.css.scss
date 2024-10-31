@@ -1,0 +1,25 @@
+#tooltip {
+    position: absolute;
+    background-color: $accent-dark-gray;
+    color: $secondary-light-gray;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 200px;
+    visibility: hidden;
+    z-index: 10;
+    
+    &.show {
+      visibility: visible;
+    }
+    
+    .tooltip-header {
+      color: $primary-scarlet;
+      font-weight: bold;
+    }
+    
+    .tooltip-content {
+      color: $secondary-light-gray;
+    }
+  }
+  

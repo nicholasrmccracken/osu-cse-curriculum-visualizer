@@ -1,0 +1,31 @@
+#specialization-selector {
+    margin: 20px 0;
+    
+    select {
+      padding: 5px;
+      font-size: 16px;
+      color: $accent-gray;
+      border: 1px solid $accent-gray;
+      border-radius: 4px;
+      background-color: $secondary-light-gray;
+    }
+    
+    select:focus {
+      border-color: $primary-scarlet;
+      outline: none;
+    }
+  
+    .filter-button {
+      background-color: $primary-scarlet;
+      color: $secondary-light-gray;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: darken($primary-scarlet, 10%);
+      }
+    }
+  }
+  
