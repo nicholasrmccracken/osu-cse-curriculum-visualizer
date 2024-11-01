@@ -59,6 +59,14 @@
         }
     }
 
+    .prereq-highlight {
+        background-color: $prerequisite-chain;
+    }
+
+    .postreq-highlight {
+        background-color: $postrequisite-chain;
+    }
+
     .gened {
         display: flex;
         align-items: center;

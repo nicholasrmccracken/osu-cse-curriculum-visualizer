@@ -1,3 +1,34 @@
-export default function createHoverEvents() {
-    // TODO: Implement createHoverEvents function to apply mouseover event listener to every course
+// Creates EventListener for each cell on mouseover
+export default function createHoverEvents(courseData) {
+const courseMap = new Map(courseData.map(course => [course.id, course]));
+
+    document.querySelectorAll('.course').forEach(cell => {
+        const courseId = cell.getAttribute('data-course');
+        const course = courseMap.get(courseId);
+
+        if (course) {
+            cell.addEventListener('mouseenter', () => highlightRequisites(course, true));
+            cell.addEventListener('mouseleave', () => highlightRequisites(course, false));
+        }
+        
+    })
+}
+
+// Highlights appropriate requisites
+function highlightRequisites(course, highlight) {
+    // Highlight requisites
+    // Prerequisites
+    course.prereqSequence.forEach(prereqId => {
+        const prereqCell = document.querySelector(`[data-course="${prereqId}"`);
+        if (prereqCell) {
+            prereqCell.classList.toggle('prereq-highlight', highlight);
+        }
+    });
+    // Postrequistes
+    course.postreqSequence.forEach(postreqId => {
+        const postreqCell = document.querySelector(`[data-course="${postreqId}"`);
+        if (postreqCell) {
+            postreqCell.classList.toggle('postreq-highlight', highlight);
+        }
+    });
 }

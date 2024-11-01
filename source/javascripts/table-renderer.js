@@ -82,8 +82,9 @@ function renderFooter() {
 function createCourseContainer(course) {
     // Initialize course container
     const container = document.createElement('div');
-    container.classList.add(COURSE_CONTAINER_CLASS);
+    container.classList.add(COURSE_CONTAINER_CLASS, 'course');
     container.id = course.id
+    container.setAttribute('data-course', course.id)
 
     // Create course ID and course name text
     const courseIdText = document.createElement('strong');

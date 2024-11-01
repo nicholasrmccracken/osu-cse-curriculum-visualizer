@@ -17,7 +17,7 @@ async function initializeApp() {
         // Populate pre/postreq sequences and render the curriculum table
         const populatedCourses = populateSequences(courses);
         renderTable(populatedCourses, geneds, semesters);
-        createHoverEvents();
+        createHoverEvents(populatedCourses);
 
         console.log('Table was rendered successfully.');
     } catch(error) {
