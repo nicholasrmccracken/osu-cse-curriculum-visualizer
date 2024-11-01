@@ -1,0 +1,33 @@
+#capstone-section {
+    background-color: $secondary-light-gray;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  
+    h2 {
+      color: $primary-scarlet;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      
+      li {
+        margin: 5px 0;
+        
+        a {
+          color: $primary-scarlet;
+          font-weight: bold;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+            color: $highlighted-course;
+          }
+        }
+      }
+    }
+  }

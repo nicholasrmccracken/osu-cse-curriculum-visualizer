@@ -1,0 +1,50 @@
+---
+title: "Progress Tracker"
+progress_tracker: true
+interactive_features: true
+tooltip: false
+filter_options: false
+capstone: false
+specialization: false
+---
+
+<section id="progress-tracker">
+  <h2>Your Academic Progress</h2>
+  <p>Track your completed and pending courses for each requirement area.</p>
+  
+  <div id="tracker-content">
+    <!-- Example layout; JavaScript can dynamically populate this section -->
+    <table class="curriculum-table">
+      <thead>
+        <tr>
+          <th>Requirement</th>
+          <th>Status</th>
+          <th>Courses Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Core Courses</td>
+          <td>In Progress</td>
+          <td>5 of 10</td>
+        </tr>
+        <tr>
+          <td>Electives</td>
+          <td>Not Started</td>
+          <td>0 of 3</td>
+        </tr>
+        <tr>
+          <td>Capstone</td>
+          <td>Not Started</td>
+          <td>0 of 1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="progress-summary">
+    <p>Total Courses Completed: <span id="total-completed">5</span> / <span id="total-required">14</span></p>
+  </div>
+</section>
+
+<script type="module" src="/javascripts/progress-tracker.js"></script>

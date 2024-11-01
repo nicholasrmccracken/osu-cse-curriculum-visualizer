@@ -1,0 +1,38 @@
+#progress-tracker {
+    background-color: $secondary-light-gray;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  
+    h2 {
+      color: $primary-scarlet;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .tracker-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+  
+      .progress-item {
+        background-color: white;
+        border: 1px solid $accent-gray;
+        border-radius: 5px;
+        padding: 8px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        &.completed {
+          background-color: $highlighted-course;
+          color: white;
+        }
+  
+        &.incomplete {
+          background-color: $immediate-prerequisite;
+          color: $accent-dark-gray;
+        }
+      }
+    }
+  }
