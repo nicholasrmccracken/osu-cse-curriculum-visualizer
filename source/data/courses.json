@@ -3,7 +3,7 @@
     "id": "ENGR 1100",
     "name": "Engineering Survey",
     "urls": [
-      "https://engineering.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/engr_1100.15h"
     ],
     "credits": 1,
     "semester": 1,
@@ -14,7 +14,7 @@
     "id": "ENGR 1181",
     "name": "Fundamentals of Engineering I",
     "urls": [
-      "https://engineering.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/engr_1181.01"
     ],
     "credits": 2,
     "semester": 1,
@@ -25,7 +25,7 @@
     "id": "CSE 1223",
     "name": "Intro to Computer Programming in Java",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/cse_1223"
     ],
     "credits": 3,
     "semester": 1,
@@ -36,7 +36,7 @@
     "id": "MATH 1151",
     "name": "Calculus I",
     "urls": [
-      "https://math.osu.edu/"
+      "https://math.osu.edu/courses/math-1151"
     ],
     "credits": 5,
     "semester": 1,
@@ -47,7 +47,7 @@
     "id": "PHYSICS 1250",
     "name": "Mechanics, Kinematics, & Fluids",
     "urls": [
-      "https://physics.osu.edu/"
+      "https://physics.osu.edu/courses/physics-1250"
     ],
     "credits": 5,
     "semester": 1,
@@ -60,7 +60,7 @@
     "id": "ENGR 1182",
     "name": "Fundamentals of Engineering II",
     "urls": [
-      "https://engineering.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/engr_1182.01"
     ],
     "credits": 2,
     "semester": 2,
@@ -73,7 +73,7 @@
     "id": "CSE 2221",
     "name": "Software I",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/2221"
     ],
     "credits": 4,
     "semester": 2,
@@ -88,7 +88,7 @@
     "id": "MATH 1172",
     "name": "Calculus II",
     "urls": [
-      "https://math.osu.edu/"
+      "https://math.osu.edu/courses/math-1172"
     ],
     "credits": 5,
     "semester": 2,
@@ -101,7 +101,7 @@
     "id": "CSE 2231",
     "name": "Software II",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/2231"
     ],
     "credits": 4,
     "semester": 3,
@@ -116,7 +116,7 @@
     "id": "CSE 2321",
     "name": "Foundations I",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/2321"
     ],
     "credits": 3,
     "semester": 3,
@@ -132,7 +132,7 @@
     "id": "STAT 3470",
     "name": "Intro to Probability & Statistics for Engineers",
     "urls": [
-      "https://stat.osu.edu/"
+      "https://stat.osu.edu/courses/stat-3470.01"
     ],
     "credits": 3,
     "semester": 3,
@@ -145,7 +145,7 @@
     "id": "CSE 2331",
     "name": "Foundations II",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/2331"
     ],
     "credits": 3,
     "semester": 4,
@@ -160,7 +160,7 @@
     "id": "CSE 2421",
     "name": "Systems I",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/2421"
     ],
     "credits": 4,
     "semester": 4,
@@ -174,7 +174,7 @@
     "id": "ECE 2060",
     "name": "Intro to Digital Logic",
     "urls": [
-      "https://ece.osu.edu/"
+      "https://ece.osu.edu/sites/default/files/uploads/ece-2060.pdf"
     ],
     "credits": 3,
     "semester": 4,
@@ -185,7 +185,7 @@
     "id": "MATH 3345",
     "name": "Foundations of Higher Mathematics",
     "urls": [
-      "https://math.osu.edu/"
+      "https://math.osu.edu/courses/math-3345"
     ],
     "credits": 3,
     "semester": 4,
@@ -199,7 +199,7 @@
     "id": "CSE 2431",
     "name": "Systems II",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/2431"
     ],
     "credits": 3,
     "semester": 5,
@@ -210,9 +210,11 @@
   },
   "CSE 390X": {
     "id": "CSE 390X",
-    "name": "Project",
+    "name": "Web (01) OR Game (02) OR Soft (03)",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/3901", 
+      "https://data-analytics.osu.edu/courses/cse/3902",
+      "https://data-analytics.osu.edu/courses/cse/3903"
     ],
     "credits": 4,
     "semester": 5,
@@ -225,7 +227,7 @@
     "id": "ECE 2020",
     "name": "Intro to Analog Systems & Circuits",
     "urls": [
-      "https://ece.osu.edu/"
+      "https://ece.osu.edu/sites/default/files/uploads/2020.pdf"
     ],
     "credits": 3,
     "semester": 5,
@@ -239,7 +241,7 @@
     "id": "MATH 2568",
     "name": "Linear Algebra",
     "urls": [
-      "https://math.osu.edu/"
+      "https://math.osu.edu/courses/math-2568"
     ],
     "credits": 3,
     "semester": 5,
@@ -252,8 +254,8 @@
     "id": "CSE 32X1",
     "name": "Software Engineering OR Database Systems",
     "urls": [
-      "https://cse.osu.edu/", 
-      "https://cse.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3231", 
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3241"
     ],
     "credits": 3,
     "semester": 6,
@@ -268,8 +270,8 @@
     "id": "CSE 34X1",
     "name": "Computer Architecture OR Networking",
     "urls": [
-      "https://cse.osu.edu/", 
-      "https://cse.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3421", 
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3461"
     ],
     "credits": 3,
     "semester": 6,
@@ -285,8 +287,8 @@
     "id": "CSE 35X1",
     "name": "Artificial Intelligence OR Graphics",
     "urls": [
-      "https://cse.osu.edu/", 
-      "https://cse.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3521", 
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3541"
     ],
     "credits": 3,
     "semester": 6,
@@ -301,7 +303,7 @@
     "id": "CSE 2501",
     "name": "Social, Ethical, & Professional Issues in Computing",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/cse_2501"
     ],
     "credits": 1,
     "semester": 6,
@@ -314,7 +316,7 @@
     "id": "CSE 3341",
     "name": "Principles of Programming Languages",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://syllabi.engineering.osu.edu/syllabi/cse_3341"
     ],
     "credits": 3,
     "semester": 7,
@@ -327,9 +329,13 @@
   },
   "CSE 591X": {
     "id": "CSE 591X",
-    "name": "Capstone",
+    "name": "Software OR Game Dev OR Animation OR Knowledge Sys OR Info Sys",
     "urls": [
-      "https://cse.osu.edu/"
+      "https://data-analytics.osu.edu/courses/cse/5911",
+      "https://data-analytics.osu.edu/courses/cse/5912",
+      "https://data-analytics.osu.edu/courses/cse/5913",
+      "https://data-analytics.osu.edu/courses/cse/5914",
+      "https://data-analytics.osu.edu/courses/cse/5915"
     ],
     "credits": 4,
     "semester": 8,
