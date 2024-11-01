@@ -44,7 +44,7 @@
   <body>
     <header>
       <h1><%= current_page.data.title || "OSU Course Visualizer" %></h1>
-      <%= partial "partials/navbar" %>
+      <%= partial "layouts/partials/navbar" %>
     </header>
 
     <!-- Main Content -->
@@ -54,7 +54,7 @@
 
     <!-- Progress Tracker Section (Optional) -->
     <% if current_page.data.progress_tracker %>
-      <%= partial "partials/progress-tracker" %>
+      <%= partial "layouts/partials/progress-tracker" %>
     <% end %>
 
     <!-- Capstone Section (Optional) -->
@@ -64,7 +64,7 @@
 
     <!-- Specialization Selector (Optional) -->
     <% if current_page.data.specialization %>
-      <%= partial "partials/specialization" %>
+      <%= partial "layouts/partials/specialization" %>
     <% end %>
 
     <footer>
