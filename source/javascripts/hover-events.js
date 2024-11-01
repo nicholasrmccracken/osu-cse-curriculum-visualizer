@@ -31,4 +31,18 @@ function highlightRequisites(course, highlight) {
             postreqCell.classList.toggle('postreq-highlight', highlight);
         }
     });
+    // Corequisites
+    course.coreqSequence.forEach(coreqId => {
+        const coreqCell = document.querySelector(`[data-course="${coreqId}"`);
+        if (coreqCell) {
+            coreqCell.classList.toggle('coreq-highlight', highlight);
+        }
+    });
+    // iprerequisites
+    course.iprereqSequence.forEach(iprereqId => {
+        const iprereqCell = document.querySelector(`[data-course="${iprereqId}"`);
+        if (iprereqCell) {
+            iprereqCell.classList.toggle('iprereq-highlight', highlight);
+        }
+    });
 }

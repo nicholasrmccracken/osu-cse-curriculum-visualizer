@@ -11,6 +11,7 @@ export default function populateSequences(coursesObject) {
     for (const course of courseMapping.values()) {
         course.prereqSequence = new Set();
         course.postreqSequence = new Set();
+        course.coreqSequence = new Set();
     }
 
     // Build prerequisite sequences
@@ -23,11 +24,16 @@ export default function populateSequences(coursesObject) {
         buildPostreqSequence(course, courseMapping);
     }
 
+    for (const course of courseMapping.values()){
+        buildCoreqSequence(course, courseMapping);
+    }
+
     // Convert Sets to Arrays before returning
     return Array.from(courseMapping.values()).map(course => ({
         ...course,
         prereqSequence: Array.from(course.prereqSequence),
-        postreqSequence: Array.from(course.postreqSequence)
+        postreqSequence: Array.from(course.postreqSequence),
+        coreqSequence: Array.from(course.coreqSequence)
     }));
 }
 
@@ -79,3 +85,29 @@ function buildPostreqSequence(course, courseMapping, visited = new Set()) {
         }
     }
 }
+
+/**
+ * Builds the corequisite sequence for a course.
+ * @param {Object} course - The course object.
+ * @param {Map<string, Object>} courseMapping - A map of course IDs to course objects.
+ * @param {Set<string>} [visited=new Set()] - The set of visited courses to avoid cycles.
+ */
+function buildCoreqSequence(course, courseMapping, visited = new Set()) {
+    // Base case: skip if the course is already visited
+    if (visited.has(course.id)) return;
+    visited.add(course.id);
+
+    for (const coreqId of course.coreqs || []) {
+        const coreqCourse = courseMapping.get(coreqId);
+
+        if (coreqCourse) {
+            // Build corequisites for the corequisite course before continuing
+            buildCoreqSequence(coreqCourse, courseMapping, visited);
+
+            // Add the corequisite course and its corequisites to the sequence
+            course.coreqSequence.add(coreqCourse.id);
+            coreqCourse.coreqSequence.forEach(id => course.coreqSequence.add(id));
+        }
+    }
+}
+

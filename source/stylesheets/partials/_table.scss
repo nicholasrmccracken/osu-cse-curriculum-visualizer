@@ -67,6 +67,14 @@
         background-color: $postrequisite-chain;
     }
 
+    .coreq-highlight {
+        background-color: $corequisite;
+    }
+
+    .iprereq-highlight {
+        background-color: $immediate-prerequisite;
+    }
+
     .gened {
         display: flex;
         align-items: center;
