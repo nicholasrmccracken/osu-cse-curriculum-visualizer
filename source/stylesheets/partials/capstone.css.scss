@@ -1,36 +1,33 @@
-#capstone-options {
+#capstone-section {
     background-color: $secondary-light-gray;
-    padding: 20px;
-    border: 1px solid $accent-gray;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
   
     h2 {
       color: $primary-scarlet;
+      font-size: 18px;
+      margin-bottom: 8px;
     }
   
-    .capstone-list {
+    ul {
       list-style-type: none;
       padding: 0;
-    }
-  
-    .capstone-item {
-      margin-bottom: 15px;
-      padding: 10px;
-      border-bottom: 1px solid $accent-gray;
-      color: $accent-dark-gray;
       
-      .prerequisite {
-        color: $immediate-prerequisite;
-        font-weight: bold;
+      li {
+        margin: 5px 0;
+        
+        a {
+          color: $primary-scarlet;
+          font-weight: bold;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+            color: $highlighted-course;
+          }
+        }
       }
     }
-  
-    .eligible {
-      color: $highlighted-course;
-    }
-    
-    .ineligible {
-      color: $prerequisite-chain;
-    }
   }
-  
