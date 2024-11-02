@@ -138,8 +138,8 @@ function createGenedContainer(gened, genedName, count) {
 
     // Set gened name conditionally based on whether or not it exists in geneds object
     const courseIdText = document.createElement('em');
-    courseIdText.innerText = gened ? `${genedName} (${gened.credits})` : genedName;
-    courseIdText.style.display = 'none';
+    courseIdText.innerText = gened ? `(${gened.credits})` : genedName;
+    //courseIdText.style.display = 'none';
     const courseNameText = createGenedNameText(gened, genedName);
 
     // Handle edgecase where a gened is also a prereq for other courses by adding id
@@ -148,9 +148,10 @@ function createGenedContainer(gened, genedName, count) {
     }
 
     // Append course ID and course name separated by a linebreak
-    container.appendChild(courseIdText);
-    container.appendChild(document.createElement('br'));
     container.appendChild(courseNameText);
+    container.appendChild(document.createElement('span'));
+    container.appendChild(courseIdText);
+
     return container;
 }
 
