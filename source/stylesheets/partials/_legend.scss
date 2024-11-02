@@ -2,10 +2,12 @@
     width: 75%;
     height: 75px;
     padding: 5px;
+    justify-self: center;
 }
 
 .grid-list {
     display: grid;
+
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     border-radius: 3px;
