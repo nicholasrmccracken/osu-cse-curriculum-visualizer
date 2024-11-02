@@ -22,6 +22,9 @@
     },
     "GE-Launch Seminar": {
         "id": "GE-Launch Seminar",
+        "urls": [
+      "https://data-analytics.osu.edu/courses/cse/2231"
+        ], 
         "credits": 1
     },
     "GE-Writing": {

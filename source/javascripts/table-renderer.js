@@ -137,16 +137,35 @@ function createGenedContainer(gened, genedName, count) {
     container.classList.add(COURSE_CONTAINER_CLASS, GENED_CONTAINER_CLASS);
 
     // Set gened name conditionally based on whether or not it exists in geneds object
-    const courseNameText = document.createElement('em');
-    courseNameText.innerText = gened ? `${genedName} (${gened.credits})` : genedName;
+    const courseIdText = document.createElement('em');
+    courseIdText.innerText = gened ? `${genedName} (${gened.credits})` : genedName;
+    const courseNameText = createGenedNameText(gened, genedName);
 
     // Handle edgecase where a gened is also a prereq for other courses by adding id
     if (count === 1 && gened?.id) {
         container.id = gened.id;
     }
 
+    
     container.appendChild(courseNameText);
     return container;
+}
+
+function createGenedNameText(gened, genedName) {
+    const genedNameText = document.createElement('em');
+
+    // Create a hyperlink if gened.url exists
+    if (gened?.urls) {
+        const link = document.createElement('a');
+        link.href = gened.urls; // Set the URL for the link
+        link.innerText = genedName; // Set the gened name as the link text
+        genedNameText.appendChild(link);
+    } else {
+        // Otherwise, just set the gened name as plain text
+        genedNameText.innerText = genedName;
+    }
+
+    return genedNameText;
 }
 
 /**
