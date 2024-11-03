@@ -1,17 +1,18 @@
 /**
- * Populates the prerequisite and postrequisite sequences for each course.
+ * Populates the pre/post/co/iprerequisite sequences for each course.
  * @param {Object} coursesObject - The object containing course data.
- * @returns {Array} The list of courses with populated prerequisite and postrequisite sequences.
+ * @returns {Array} The list of courses with populated pre/post/co/iprerequisite sequences.
  */
 export default function populateSequences(coursesObject) {
     // Convert object to Map
     const courseMapping = new Map(Object.entries(coursesObject));
 
-    // Initialize prerequisite and postrequisite sequences as empty Sets
+    // Initialize pre/post/co/iprerequisite sequences as empty Sets
     for (const course of courseMapping.values()) {
         course.prereqSequence = new Set();
         course.postreqSequence = new Set();
         course.coreqSequence = new Set();
+        course.iprereqSequence = new Set();
     }
 
     // Build prerequisite sequences
@@ -24,6 +25,7 @@ export default function populateSequences(coursesObject) {
         buildPostreqSequence(course, courseMapping);
     }
 
+    // Build corequisite sequences
     for (const course of courseMapping.values()){
         buildCoreqSequence(course, courseMapping);
     }
@@ -33,7 +35,8 @@ export default function populateSequences(coursesObject) {
         ...course,
         prereqSequence: Array.from(course.prereqSequence),
         postreqSequence: Array.from(course.postreqSequence),
-        coreqSequence: Array.from(course.coreqSequence)
+        coreqSequence: Array.from(course.coreqSequence),
+        iprereqSequence: Array.from(course.iprereqSequence)
     }));
 }
 
@@ -48,7 +51,13 @@ function buildPrereqSequence(course, courseMapping, visited = new Set()) {
     if (visited.has(course.id)) return;
     visited.add(course.id);
 
+    // Initialize immediate prerequisite set
+    course.iprereqSequence = new Set(course.iprereq || []);
+
     for (const prereqId of course.prereqs || []) {
+        // Skip immediate prerequisites
+        if (course.iprereqSequence.has(prereqId)) continue;
+
         const prereqCourse = courseMapping.get(prereqId);
 
         if (prereqCourse) {

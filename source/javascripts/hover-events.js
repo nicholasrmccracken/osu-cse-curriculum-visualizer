@@ -38,7 +38,7 @@ function highlightRequisites(course, highlight) {
             coreqCell.classList.toggle('coreq-highlight', highlight);
         }
     });
-    // iprerequisites
+    // Immediate prerequisites
     course.iprereqSequence.forEach(iprereqId => {
         const iprereqCell = document.querySelector(`[data-course="${iprereqId}"`);
         if (iprereqCell) {
