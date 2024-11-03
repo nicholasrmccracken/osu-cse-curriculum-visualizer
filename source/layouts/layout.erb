@@ -51,21 +51,14 @@
       <%= yield %>
     </main>
 
-   <!-- Progress Tracker Section (Optional) -->
-    <% if current_page.data.progress_tracker %>
-      <%= partial "layouts/partials/progress-tracker" %>
-    <% end %>
+ 
 
     <!-- Capstone Section (Optional) -->
     <% if current_page.data.capstone %>
       <%= partial "partials/capstone" %>
     <% end %>
 
-    <!-- Specialization Selector (Optional) -->
-    <% if current_page.data.specialization %>
-      <%= partial "layouts/partials/specialization" %>
-    <% end %> 
-
+   
     <footer>
       <%= partial "layouts/footer" %>
     </footer>
