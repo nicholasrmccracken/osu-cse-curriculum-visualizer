@@ -43,7 +43,6 @@
   </head>
   <body>
     <header>
-      <h1><%= current_page.data.title || "OSU Course Visualizer" %></h1>
       <%= partial "layouts/partials/navbar" %>
     </header>
 
@@ -52,7 +51,7 @@
       <%= yield %>
     </main>
 
-    <!-- Progress Tracker Section (Optional) -->
+   <!-- Progress Tracker Section (Optional) -->
     <% if current_page.data.progress_tracker %>
       <%= partial "layouts/partials/progress-tracker" %>
     <% end %>
@@ -65,7 +64,7 @@
     <!-- Specialization Selector (Optional) -->
     <% if current_page.data.specialization %>
       <%= partial "layouts/partials/specialization" %>
-    <% end %>
+    <% end %> 
 
     <footer>
       <%= partial "layouts/footer" %>
