@@ -42,14 +42,34 @@ header {
   
   h1 {
     font-size: 24px;
+    text-decoration: underline;
+    text-underline-position: below;
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns child elements to the bottom */
+    text-align: center;
+    height: 60%;
   }
   .page_info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-grow: 1;
 
+  }
+  .image {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+  #logo {
+    width: 267px;
+    height: 150px;
   }
 }
 
