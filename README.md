@@ -111,7 +111,9 @@ Be sure to adhere to the [style guidelines](#style-guidelines).
 
 **Aysha:**
 
--
+- Implemented prerequisite chain, direct prerequisite, and post-requisite highlighting
+- Created event listeners for each course cell to listen for mouse enter and mouse leave
+- Added immediate prerequisite courses to json data file and its sequence building
 
 **Christopher:**
 
