@@ -117,7 +117,10 @@ Be sure to adhere to the [style guidelines](#style-guidelines).
 
 **Christopher:**
 
--
+- Implemented key for user to understand hilighting color scheme
+- Linked each course to its department syllabus
+- Linked each GE and Tech Elective to options for fulfillment
+- Implemented corequisite highlighting
 
 **Nicholas:**
 
