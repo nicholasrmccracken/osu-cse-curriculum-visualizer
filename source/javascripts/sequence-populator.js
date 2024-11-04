@@ -12,7 +12,6 @@ export default function populateSequences(coursesObject) {
         course.prereqSequence = new Set();
         course.postreqSequence = new Set();
         course.coreqSequence = new Set();
-        course.iprereqSequence = new Set();
     }
 
     // Build prerequisite sequences
@@ -35,8 +34,7 @@ export default function populateSequences(coursesObject) {
         ...course,
         prereqSequence: Array.from(course.prereqSequence),
         postreqSequence: Array.from(course.postreqSequence),
-        coreqSequence: Array.from(course.coreqSequence),
-        iprereqSequence: Array.from(course.iprereqSequence)
+        coreqSequence: Array.from(course.coreqSequence)
     }));
 }
 
@@ -51,13 +49,7 @@ function buildPrereqSequence(course, courseMapping, visited = new Set()) {
     if (visited.has(course.id)) return;
     visited.add(course.id);
 
-    // Initialize immediate prerequisite set
-    course.iprereqSequence = new Set(course.iprereq || []);
-
     for (const prereqId of course.prereqs || []) {
-        // Skip immediate prerequisites
-        if (course.iprereqSequence.has(prereqId)) continue;
-
         const prereqCourse = courseMapping.get(prereqId);
 
         if (prereqCourse) {
@@ -119,4 +111,3 @@ function buildCoreqSequence(course, courseMapping, visited = new Set()) {
         }
     }
 }
-

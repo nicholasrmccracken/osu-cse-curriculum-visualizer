@@ -8,8 +8,7 @@
     "credits": 1,
     "semester": 1,
     "prereqs": [],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "ENGR 1181": {
     "id": "ENGR 1181",
@@ -20,8 +19,7 @@
     "credits": 2,
     "semester": 1,
     "prereqs": [],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 1223": {
     "id": "CSE 1223",
@@ -32,8 +30,7 @@
     "credits": 3,
     "semester": 1,
     "prereqs": [],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "MATH 1151": {
     "id": "MATH 1151",
@@ -44,8 +41,7 @@
     "credits": 5,
     "semester": 1,
     "prereqs": [],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "PHYSICS 1250": {
     "id": "PHYSICS 1250",
@@ -58,8 +54,7 @@
     "prereqs": [],
     "coreqs": [
       "MATH 1151"
-    ],
-    "iprereq": []
+    ]
   },
   "ENGR 1182": {
     "id": "ENGR 1182",
@@ -72,8 +67,7 @@
     "prereqs": [
       "ENGR 1181"
     ],
-    "coreqs": [],
-    "iprereq": ["ENGR1181"]
+    "coreqs": []
   },
   "CSE 2221": {
     "id": "CSE 2221",
@@ -88,8 +82,7 @@
     ],
     "coreqs": [
       "CSE 1151"
-    ],
-    "iprereq": []
+    ]
   },
   "MATH 1172": {
     "id": "MATH 1172",
@@ -102,8 +95,7 @@
     "prereqs": [
       "MATH 1151"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 2231": {
     "id": "CSE 2231",
@@ -118,8 +110,7 @@
     ],
     "coreqs": [
       "CSE 2321"
-    ],
-    "iprereq": ["CSE 2221"]
+    ]
   },
   "CSE 2321": {
     "id": "CSE 2321",
@@ -135,8 +126,7 @@
     ],
     "coreqs": [
       "CSE 2231"
-    ],
-    "iprereq": ["CSE 2221", "MATH 1151"]
+    ]
   },
   "STAT 3470": {
     "id": "STAT 3470",
@@ -149,8 +139,7 @@
     "prereqs": [
       "MATH 1172"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 2331": {
     "id": "CSE 2331",
@@ -165,12 +154,7 @@
       "CSE 2321",
       "STAT 3470"
     ],
-    "coreqs": [],
-    "iprereq": [
-      "CSE 2231",
-      "CSE 2321",
-      "STAT 3470"
-    ]
+    "coreqs": []
   },
   "CSE 2421": {
     "id": "CSE 2421",
@@ -184,11 +168,7 @@
       "CSE 2231",
       "CSE 2321"
     ],
-    "coreqs": [],
-    "iprereq": [
-      "CSE 2231",
-      "CSE 2321"
-    ]
+    "coreqs": []
   },
   "ECE 2060": {
     "id": "ECE 2060",
@@ -199,8 +179,7 @@
     "credits": 3,
     "semester": 4,
     "prereqs": [],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "MATH 3345": {
     "id": "MATH 3345",
@@ -214,8 +193,7 @@
       "MATH 1172",
       "CSE 2321"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 2431": {
     "id": "CSE 2431",
@@ -228,8 +206,7 @@
     "prereqs": [
       "CSE 2421"
     ],
-    "coreqs": [],
-    "iprereq": ["CSE 2421"]
+    "coreqs": []
   },
   "CSE 390X": {
     "id": "CSE 390X",
@@ -244,8 +221,7 @@
     "prereqs": [
       "CSE 2231"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "ECE 2020": {
     "id": "ECE 2020",
@@ -259,8 +235,7 @@
       "MATH 1172",
       "PHYSICS 1250"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "MATH 2568": {
     "id": "MATH 2568",
@@ -273,8 +248,7 @@
     "prereqs": [
       "MATH 1172"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 32X1": {
     "id": "CSE 32X1",
@@ -290,8 +264,7 @@
       "CSE 2321",
       "CSE 390X"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 34X1": {
     "id": "CSE 34X1",
@@ -308,8 +281,7 @@
     ],
     "coreqs": [
       "CSE 2431"
-    ],
-    "iprereq": []
+    ]
   },
   "CSE 35X1": {
     "id": "CSE 35X1",
@@ -325,8 +297,7 @@
       "MATH 2568",
       "CSE 390X"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   },
   "CSE 2501": {
     "id": "CSE 2501",
@@ -339,8 +310,7 @@
     "prereqs": [
       "GE-Writing"
     ],
-    "coreqs": [],
-    "iprereq": ["GE-Writing"]
+    "coreqs": []
   },
   "CSE 3341": {
     "id": "CSE 3341",
@@ -355,12 +325,7 @@
       "CSE 390X",
       "CSE 2421"
     ],
-    "coreqs": [],
-    "iprereq": [
-      "CSE 2331",
-      "CSE 390X",
-      "CSE 2421"
-    ]
+    "coreqs": []
   },
   "CSE 591X": {
     "id": "CSE 591X",
@@ -380,7 +345,6 @@
       "CSE 32X1",
       "CSE 2501"
     ],
-    "coreqs": [],
-    "iprereq": []
+    "coreqs": []
   }
 }

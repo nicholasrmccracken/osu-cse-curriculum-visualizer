@@ -1,64 +1,57 @@
 {
     "Tech Elective": {
-        "id": "Tech Elective",
         "urls": [
-        "https://cse.osu.edu/sites/default/files/uploads/gold_bs_cse_requirements_and_sample_schedule_rev_071720_gold.pdf"
+          "https://cse.osu.edu/sites/default/files/uploads/gold_bs_cse_requirements_and_sample_schedule_rev_071720_gold.pdf"
         ],
         "credits": 3
     },
     "Math/Science Elective": {
-        "id": "Math/Science Elective",
         "urls": [
-        "https://cse.osu.edu/sites/default/files/uploads/gold_bs_cse_requirements_and_sample_schedule_rev_071720_gold.pdf"
+          "https://cse.osu.edu/sites/default/files/uploads/gold_bs_cse_requirements_and_sample_schedule_rev_071720_gold.pdf"
         ],
         "credits": 4
     },
     "GE-Theme": {
-        "id": "GE-Theme",
         "urls": [
-      "https://students.cfaes.ohio-state.edu/sites/ap/files/site-library/site-documents/Undergraduate/AU23%20GE%20Theme%20Guide.pdf"
+          "https://students.cfaes.ohio-state.edu/sites/ap/files/site-library/site-documents/Undergraduate/AU23%20GE%20Theme%20Guide.pdf"
         ], 
         "credits": 4
     },
     "GE-Lit/VPA": {
-        "id": "GE-Lit/VPA",
         "urls": [
-      "https://aaep.osu.edu/academics/general-education-courses-ges"
+          "https://aaep.osu.edu/academics/general-education-courses-ges"
         ],
         "credits": 3
     },
     "GE-History": {
-        "id": "GE-History",
         "urls": [
-      "https://history.osu.edu/courses/info/ge-courses"
+          "https://history.osu.edu/courses/info/ge-courses"
         ],
         "credits": 3
     },
     "GE-Diversity": {
-        "id": "GE-Diversity",
         "urls": [
-      "https://asccas.osu.edu/general-education-program/gen-race-ethnicity-and-gender-diversity-themes-information/approved"
+          "https://asccas.osu.edu/general-education-program/gen-race-ethnicity-and-gender-diversity-themes-information/approved"
         ],
         "credits": 3
     },
     "GE-Social & Behavioral": {
-        "id": "GE-Social & Behavioral",
         "urls": [
-      "https://hrs.osu.edu/-/media/files/hrs/academics/academic-resources/general-education-curriculum/gen/hrs-gen.pdf?rev=5b9031081e3b4c2e9e8e36fefdfae1e0&hash=EB8167ACD5B41B944D691B67897DC3BA"
+          "https://hrs.osu.edu/-/media/files/hrs/academics/academic-resources/general-education-curriculum/gen/hrs-gen.pdf?rev=5b9031081e3b4c2e9e8e36fefdfae1e0&hash=EB8167ACD5B41B944D691B67897DC3BA"
         ],
         "credits": 3
     },
     "GE-Launch Seminar": {
         "id": "GE-Launch Seminar",
         "urls": [
-      "https://data-analytics.osu.edu/courses/cse/2231"
+          "https://data-analytics.osu.edu/courses/cse/2231"
         ], 
         "credits": 1
     },
     "GE-Writing": {
         "id": "GE-Writing",
         "urls": [
-      "https://ugeducation.osu.edu/general-education-ohio-state"
+          "https://ugeducation.osu.edu/general-education-ohio-state"
         ],
         "credits": 3
     }
