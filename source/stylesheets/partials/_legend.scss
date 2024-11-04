@@ -1,3 +1,5 @@
+@import 'variables';
+
 .legend {
     width: 75%;
     height: 75px;
@@ -24,18 +26,18 @@
     }
 }
 
-.im-prereq {
-    background-color: $immediate-prerequisite;
+.prereq-sequence {
+    background-color: $prereq-sequence-highlight;
 }
 
-.chain-prereq {
-    background-color: $prerequisite-chain;
+.postreq-sequence {
+    background-color: $postreq-sequence-highlight;
 }
 
 .coreq {
-    background-color: $corequisite;
+    background-color: $coreq-highlight;
 }
 
-.postreq {
-    background-color: $postrequisite-chain;
+.prereq {
+    background-color: $prereq-highlight;
 }

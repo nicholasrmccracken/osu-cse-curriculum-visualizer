@@ -4,63 +4,36 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Dynamic Title -->
+
     <title><%= current_page.data.title || "OSU Course Visualizer" %></title>
-    
-    <!-- Core Stylesheet -->
     <link rel="stylesheet" href="/stylesheets/site.css">
-
-    <!-- Conditional Stylesheets -->
-    <% if current_page.data.tooltip %>
-      <link rel="stylesheet" href="/stylesheets/partials/tooltip.css">
-    <% end %>
-    
-    <% if current_page.data.progress_tracker %>
-      <link rel="stylesheet" href="/stylesheets/partials/progress-tracker.css">
-    <% end %>
-
-    <% if current_page.data.filter_options %>
-      <link rel="stylesheet" href="/stylesheets/partials/filter-options.css">
-    <% end %>
-
-    <% if current_page.data.capstone %>
-      <link rel="stylesheet" href="/stylesheets/partials/capstone.css">
-    <% end %>
-
-    <!-- Core JavaScript Module -->
     <script type="module" src="/javascripts/site.js"></script>
-
-    <!-- Tooltip and Interactivity Scripts -->
-    <% if current_page.data.tooltip %>
-      <script type="module" src="/javascripts/tooltip-handler.js"></script>
-    <% end %>
-    <% if current_page.data.interactive_features %>
-      <script type="module" src="/javascripts/hover-events.js"></script>
-      <script type="module" src="/javascripts/progress-tracker.js"></script>
-      <script type="module" src="/javascripts/filter-handler.js"></script>
-    <% end %>
   </head>
   <body>
     <header>
-      <%= partial "layouts/partials/navbar" %>
+      <img id="logo" src="/images/buckeye-seal.png" alt="The Ohio State University Logo">
+      <div class="page-info">
+        <div>
+          <h1>The Ohio State University Curriculum Visualizer</h1>
+          <h2>Department of Computer Science and Engineering</h2>
+          <h3>This tool provides a model schedule for a B.S. in Computer Science Engineering at The Ohio State University over 4 years.</h3>
+        </div>
+      </div>
     </header>
 
-    <!-- Main Content -->
     <main>
       <%= yield %>
     </main>
 
- 
-
-    <!-- Capstone Section (Optional) -->
-    <% if current_page.data.capstone %>
-      <%= partial "partials/capstone" %>
-    <% end %>
-
-   
     <footer>
-      <%= partial "layouts/footer" %>
+      <nav>
+        <ul>
+          <li><a href="https://advising.osu.edu/schedule-appointment">Schedule Advising Appointment</a></li>
+          <li><a href="mailto: compsciadvising@osu.edu">Contact Us</a></li>
+          <li><a href="https://cse.osu.edu/sites/default/files/2023-03/CSE-Curriculum-Sheet-New-GE-IND-sample-schedule-with-GE-FINAL-1.pdf">Help</a></li>
+        </ul>
+      </nav>
+      <p><br>2024 OSU Course Visualizer &copy; A Team CANS production</p>
     </footer>
   </body>
 </html>

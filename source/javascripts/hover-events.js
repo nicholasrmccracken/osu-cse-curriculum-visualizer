@@ -1,48 +1,44 @@
-// Creates EventListener for each cell on mouseover
+/**
+ * Creates EventListeners for each cell on mouseover.
+ * @param {Array} courseData - Array of course objects.
+ */
 export default function createHoverEvents(courseData) {
-const courseMap = new Map(courseData.map(course => [course.id, course]));
+    const courseMap = new Map(courseData.map(course => [course.id, course]));
 
     document.querySelectorAll('.course').forEach(cell => {
-        const courseId = cell.getAttribute('data-course');
+        const courseId = cell.getAttribute('id');
         const course = courseMap.get(courseId);
 
         if (course) {
-            cell.addEventListener('mouseenter', () => highlightRequisites(course, true));
-            cell.addEventListener('mouseleave', () => highlightRequisites(course, false));
+            cell.addEventListener('mouseenter', () => toggleRequisitesHighlight(course, true));
+            cell.addEventListener('mouseleave', () => toggleRequisitesHighlight(course, false));
         }
-        
-    })
+    });
 }
 
-// Highlights appropriate requisites
-function highlightRequisites(course, highlight) {
-    // Highlight requisites
-    // Prerequisites
-    course.prereqSequence.forEach(prereqId => {
-        const prereqCell = document.querySelector(`[data-course="${prereqId}"`);
-        if (prereqCell) {
-            prereqCell.classList.toggle('prereq-highlight', highlight);
-        }
-    });
-    // Postrequistes
-    course.postreqSequence.forEach(postreqId => {
-        const postreqCell = document.querySelector(`[data-course="${postreqId}"`);
-        if (postreqCell) {
-            postreqCell.classList.toggle('postreq-highlight', highlight);
-        }
-    });
-    // Corequisites
-    course.coreqSequence.forEach(coreqId => {
-        const coreqCell = document.querySelector(`[data-course="${coreqId}"`);
-        if (coreqCell) {
-            coreqCell.classList.toggle('coreq-highlight', highlight);
-        }
-    });
-    // Immediate prerequisites
-    course.iprereqSequence.forEach(iprereqId => {
-        const iprereqCell = document.querySelector(`[data-course="${iprereqId}"`);
-        if (iprereqCell) {
-            iprereqCell.classList.toggle('iprereq-highlight', highlight);
-        }
+/**
+ * Toggles the highlight for all requisites of a course.
+ * @param {Object} course - The course object.
+ * @param {boolean} highlight - Whether to highlight or not.
+ */
+function toggleRequisitesHighlight(course, highlight) {
+    toggleRequisiteHighlight(course, 'prereqSequence', 'prereq-sequence', highlight);
+    toggleRequisiteHighlight(course, 'postreqSequence', 'postreq-sequence', highlight);
+    toggleRequisiteHighlight(course, 'coreqSequence', 'coreq', highlight);
+    toggleRequisiteHighlight(course, 'prereqs', 'prereq', highlight);
+}
+
+/**
+ * Toggles the highlight for a single requisite.
+ * @param {Object} course - The course object.
+ * @param {string} requisitesKey - The key for the requisites array in the course object.
+ * @param {string} highlightClass - The CSS class to toggle.
+ * @param {boolean} highlight - Whether to highlight or not.
+ */
+function toggleRequisiteHighlight(course, requisitesKey, highlightClass, highlight) {
+    const requisites = course[requisitesKey];
+    requisites?.forEach(id => {
+        const cell = document.getElementById(id);
+        cell?.classList.toggle(highlightClass, highlight);
     });
 }

@@ -20,7 +20,7 @@ a {
   color: $primary-scarlet;
 
   &:hover {
-    color: $highlighted-course;
+    color: $course-highlight;
   }
 }
 
@@ -34,62 +34,7 @@ body {
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
-header {
-  background-color: $primary-scarlet;
-  color: white;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-  h1 {
-    font-size: 24px;
-    text-decoration: underline;
-    text-underline-position: below;
-  }
-  h2 {
-    font-size: 18px;
-  }
-  .welcome{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Aligns child elements to the bottom */
-    text-align: center;
-    height: 60%;
-  }
-  .page_info {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-
-  }
-  .image {
-    display: flex;
-    justify-content: flex-end;
-    flex-shrink: 0;
-    margin-left: auto;
-  }
-  #logo {
-    width: 267px;
-    height: 150px;
-  }
-}
-
-footer {
-  background-color: $accent-gray;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 14px;
-
-  p {
-    margin: 0;
-  }
-}
-
-@import 'partials/legend';
+@import 'partials/header';
 @import 'partials/table';
-@import 'partials/tooltip.css';
-@import 'partials/progress-tracker.css';
-@import 'partials/filter-options.css';
-@import 'partials/capstone.css';
-
-
+@import 'partials/legend';
+@import 'partials/footer';

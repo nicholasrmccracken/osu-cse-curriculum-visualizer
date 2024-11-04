@@ -56,7 +56,7 @@
     }
 
     .course:hover {
-        background-color: $highlighted-course;
+        background-color: $course-highlight;
         color: white; 
 
         a {
@@ -64,25 +64,25 @@
         }
     }
 
-    .prereq-highlight {
-        background-color: $prerequisite-chain;
-    }
-
-    .postreq-highlight {
-        background-color: $postrequisite-chain;
-    }
-
-    .coreq-highlight {
-        background-color: $corequisite;
-    }
-
-    .iprereq-highlight {
-        background-color: $immediate-prerequisite;
-    }
-
     .gened {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .prereq-sequence {
+        background-color: $prereq-sequence-highlight;
+    }
+
+    .postreq-sequence {
+        background-color: $postreq-sequence-highlight;
+    }
+
+    .coreq {
+        background-color: $coreq-highlight;
+    }
+
+    .prereq {
+        background-color: $prereq-highlight;
     }
 }
