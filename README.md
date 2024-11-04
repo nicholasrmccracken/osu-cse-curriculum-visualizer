@@ -7,12 +7,16 @@ An interactive tool which visualizes the **Computer Science & Engineering (CSE) 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Testing](#testing)
 - [Contributing](#contributing)
   - [Style Guidelines](#style-guidelines)
 - [Individual Contributions](#individual-contributions)
 
 ## Features
+
+- Dynamic population of curriculum visualizer table with given course files
+- Dynamic calculation of credit hours by semester in table footer
+- Hover effect which higlights prerequisite, postrequisite, and corequisite courses for the hovered course
+- Semester by semester plan for CSE courses with URLs to each course webpage
 
 ## Installation
 
@@ -47,10 +51,6 @@ Locally host the website on port 4567 by running the following command:
 
 5. **Access Site Locally:**  
 Open your web browser and navigate to [http://localhost:4567](http://localhost:4567).
-
-## Usage
-
-## Testing
 
 ## Contributing
 
@@ -96,7 +96,7 @@ Be sure to adhere to the [style guidelines](#style-guidelines).
 - Use ES6 modules (export/import) instead of global variables.
 - Follow single responsibility principle (each function does one thing).
 
-**Git Style**:
+**Git Style:**
 
 - Create a branch for features that will not be completed within a single push.
 - Prefix branch names with descriptors of work being done and use dashes as separators.
@@ -124,7 +124,12 @@ Be sure to adhere to the [style guidelines](#style-guidelines).
 
 **Nicholas:**
 
--
+- Created course, semester, and gened JSON files to store data
+- Implemented auto-population of pre/postreq sequences recursively using given immediate prerequisites
+- Created table which contained CSE courses split into columns by semester
+  - Implemented dynamic rendering of courses by placing a div for each course into it's respective column
+  - Implemented footer with dynamically calculated credit hour sum by semester
+- Created README
 
 **Sanju:**
 
