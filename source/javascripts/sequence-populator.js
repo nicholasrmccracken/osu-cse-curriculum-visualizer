@@ -3,9 +3,9 @@
  * @param {Object} coursesObject - The object containing course data.
  * @returns {Array} The list of courses with populated pre/post/co/iprerequisite sequences.
  */
-export default function populateSequences(coursesObject) {
+export default function populateSequences(courseData) {
     // Convert object to Map
-    const courseMapping = new Map(Object.entries(coursesObject));
+    const courseMapping = new Map(Object.entries(courseData));
 
     // Initialize pre/post/co/iprerequisite sequences as empty Sets
     for (const course of courseMapping.values()) {

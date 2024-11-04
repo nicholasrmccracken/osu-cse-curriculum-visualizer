@@ -6,17 +6,16 @@ An interactive tool which visualizes the **Computer Science & Engineering (CSE) 
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
   - [Style Guidelines](#style-guidelines)
 - [Individual Contributions](#individual-contributions)
 
 ## Features
 
+- Semester by semester plan for CSE courses with URLs to each course webpage
+- Hover effect which higlights prerequisite, postrequisite, and corequisite courses for the hovered course
 - Dynamic population of curriculum visualizer table with given course files
 - Dynamic calculation of credit hours by semester in table footer
-- Hover effect which higlights prerequisite, postrequisite, and corequisite courses for the hovered course
-- Semester by semester plan for CSE courses with URLs to each course webpage
 
 ## Installation
 

@@ -155,6 +155,13 @@ function createGenedContainer(gened, genedName, count) {
     return container;
 }
 
+
+/**
+ * Creates a gened name text element with hyperlinks if URLs are provided.
+ * @param {Object} gened - The gened object containing information about the general education requirement.
+ * @param {string} genedName - The name of the general education requirement.
+ * @returns {HTMLElement} - The created gened name element.
+ */
 function createGenedNameText(gened, genedName) {
     const genedNameText = document.createElement('em');
 

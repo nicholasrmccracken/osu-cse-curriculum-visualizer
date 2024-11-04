@@ -10,8 +10,8 @@ export default function createHoverEvents(courseData) {
         const course = courseMap.get(courseId);
 
         if (course) {
-            cell.addEventListener('mouseenter', () => toggleRequisitesHighlight(course, true));
-            cell.addEventListener('mouseleave', () => toggleRequisitesHighlight(course, false));
+            cell?.addEventListener('mouseenter', () => toggleRequisitesHighlight(course, true));
+            cell?.addEventListener('mouseleave', () => toggleRequisitesHighlight(course, false));
         }
     });
 }
